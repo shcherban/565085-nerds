@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Константин Щербань](https://up.htmlacademy.ru/htmlcss/20/user/565085).
-* Наставник: [Сергей Рубец].
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
 
 ---
 
