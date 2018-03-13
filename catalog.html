@@ -31,25 +31,63 @@
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset>
             <legend>Стоимость:</legend>
+            <!-- Здесь будет range с двумя ручками -->
+            <p>
+              <label for="filter-price-min">От</label>
+              <input id="filter-price-min" name="min-price" type="text" value="0">
+            </p>
+            <p>
+              <label for="filter-price-max">до</label>
+              <input id="filter-price-max" name="max-price" type="text" value="15000">
+            </p>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
-              <li><input type="radio"><label for=""></label></li>
-              <li><input type="radio"><label for=""></label></li>
-              <li><input type="radio"><label for=""></label></li>
+              <li>
+                <input class="visually-hidden" id="filter-adaptive"
+                 name="grid" value="adaptive" type="radio" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="filter-fixed"
+                 name="grid" value="fixed" type="radio">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="filter-rubber"
+                 name="grid" value="rubber" type="radio">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
             <ul>
-              <li><input type="checkbox"></li>
-              <li><input type="checkbox"></li>
-              <li><input type="checkbox"></li>
-              <li><input type="checkbox"></li>
-              <li><input type="checkbox"></li>
+              <li>
+                <input id="filter-feature-slider" name="slider" class="visually-hidden" type="checkbox" checked>
+                <label for="filter-feature-slider">Слайдер</label>
+              </li>
+              <li>
+                <input id="filter-feature-features" name="features" class="visually-hidden" type="checkbox">
+                <label for="filter-feature-features">Блок преимуществ</label>
+              </li>
+              <li>
+                <input id="filter-feature-news" name="news" class="visually-hidden" type="checkbox" checked>
+                <label for="filter-feature-news">Новости</label>
+              </li>
+              <li>
+                <input id="filter-feature-gallery" name="gallery" class="visually-hidden" type="checkbox">
+                <label for="filter-feature-gallery">Галерея</label>
+              </li>
+              <li>
+                <input id="filter-feature-cart" name="cart" class="visually-hidden" type="checkbox">
+                <label for="filter-feature-cart">Корзина</label>
+              </li>
             </ul>
-          </fieldset>          
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="sorting">
@@ -144,7 +182,7 @@
       <h2 class="visually-hidden">Контакты</h2>
       <section class="footer-contacts">
         <h3 class="visually-hidden">Адрес и телефон</h3>
-        <img src="img/map.png" width="1440" height="416">
+        <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, Большая Конюшенная, 19/8">
         <div class="contacts-card">
           <h3>Nërds Design Studio</h3>
           <p>191186, Санкт-Петербург,<br>
@@ -183,7 +221,7 @@
             name="contact-form-email" placeholder="email@example.com">
         </p>
         <p>
-          <label for="contact-form-message">Текст присьма:</label>
+          <label for="contact-form-message">Текст письма:</label>
           <textarea id="contact-form-message">В свободной форме</textarea>
         </p>
         <button class="button" type="submit">Отправить</button>

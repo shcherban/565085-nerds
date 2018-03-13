@@ -16,7 +16,8 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="cart-link">Корзина</li>
+          <li class="cart-link">
+            <a class="cart-link" href="cart.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -32,6 +33,11 @@
         <a href="#">Узнать больше</a>
         <img src="img/nerds-index-slide1.png" width="760" height="431"
              alt="Смартфоны и абстрактные фигуры, парящие в пространстве">
+        <ol>
+          <li><button class="slider-button">Слайд № 1</button></li>
+          <li><button class="slider-button">Слайд № 2</button></li>
+          <li><button class="slider-button">Слайд № 3</button></li>
+        </ol>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -124,7 +130,7 @@
       <h2 class="visually-hidden">Контакты</h2>
       <section class="footer-contacts">
         <h3 class="visually-hidden">Адрес и телефон</h3>
-        <img src="img/map.png" width="1440" height="416">
+        <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, Большая Конюшенная, 19/8">
         <div class="contacts-card">
           <h3>Nërds Design Studio</h3>
           <p>191186, Санкт-Петербург,<br>
@@ -163,7 +169,7 @@
             name="contact-form-email" placeholder="email@example.com">
         </p>
         <p>
-          <label for="contact-form-message">Текст присьма:</label>
+          <label for="contact-form-message">Текст письма:</label>
           <textarea id="contact-form-message">В свободной форме</textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
