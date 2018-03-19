@@ -394,16 +394,21 @@ h1 {
     font-weight: 700;
     line-height: 30px;
     color: #000000;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .catalog-item-info-price p {
     line-height: 18px;
     color: #666666;
+    text-align: center;
 }
 
 .price-button {
     color: #ffffff;
     background-color: #fb565a;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .price-button:hover,
