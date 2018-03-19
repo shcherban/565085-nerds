@@ -23,7 +23,6 @@ h1 {
     text-align: center;
 }
 
-
 /* Навигация */
 
 .main-navigation {
@@ -44,17 +43,18 @@ h1 {
 .user-navigation a {
     color: #000000;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
     color: #fb565a;
 }
+
 .site-navigation a:active,
 .user-navigation a:active {
     color: rgba(0, 0, 0, 0.3);
 }
-
 
 /* Слайдер */
 
@@ -76,10 +76,12 @@ h1 {
     color: #ffffff;
     background-color: #fb565a;
 }
+
 .slider a:hover,
 .slider a:focus {
     background-color: #e74246;
 }
+
 .slider a:active {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
@@ -88,7 +90,6 @@ h1 {
 .slider ul {
     list-style: none;
 }
-
 
 /* Преимущества */
 
@@ -111,43 +112,48 @@ h1 {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.advantages-item:nth-child(1) a {
+.advantages-web-sites a {
     background-color: #fb565a;
 }
-.advantages-item:nth-child(1) a:hover,
-.advantages-item:nth-child(1) a:focus {
+
+.advantages-web-sites a:hover,
+.advantages-web-sites a:focus {
     background-color: #e74246;
 }
-.advantages-item:nth-child(1) a:active {
+
+.advantages-web-sites a:active {
     background-color: #d7373b;
 }
 
-.advantages-item:nth-child(2) a {
+.advantages-mobile-apps a {
     background-color: #00ca74;
 }
-.advantages-item:nth-child(2) a:hover,
-.advantages-item:nth-child(2) a:focus {
+
+.advantages-mobile-apps a:hover,
+.advantages-mobile-apps a:focus {
     background-color: #00bc6c;
 }
-.advantages-item:nth-child(2) a:active {
+
+.advantages-mobile-apps a:active {
     background-color: #00aa62;
 }
 
-.advantages-item:nth-child(3) a {
+.advantages-presentations a {
     background-color: #efc84a;
 }
-.advantages-item:nth-child(3) a:hover,
-.advantages-item:nth-child(3) a:focus {
+
+.advantages-presentations a:hover,
+.advantages-presentations a:focus {
     background-color: #eab534;
 }
-.advantages-item:nth-child(3) a:active {
+
+.advantages-presentations a:active {
     background-color: #e5a722;
 }
 
 .advantages ul {
     list-style: none;
 }
-
 
 /* Студия */
 
@@ -178,18 +184,17 @@ h1 {
     line-height: 10.06px;
     color: #000000;
 }
+
 .studio-quality-indicators span {
     vertical-align: super;
     font-size: 0.5em;
 }
-
 
 /* Клиенты */
 
 .client-list {
     list-style: none;
 }
-
 
 /* Подвал: карта, контакты */
 
@@ -211,7 +216,6 @@ h1 {
     background-color: #fb565a;
 }
 
-
 /* Подвал: соцсети */
 
 .footer-social b {
@@ -230,7 +234,6 @@ h1 {
     list-style: none;
 }
 
-
 /* Модальное окно */
 
 .contact-form {
@@ -243,13 +246,12 @@ h1 {
     line-height: 45px;
     color: #000000;
 }
-/*
+
 .modal-contact label {
     font-weight: 700;
     line-height: 18px;
     color: #000000;
 }
-*/
 
 .modal-contact input,
 .modal-contact textarea {
@@ -258,6 +260,7 @@ h1 {
     background-color: transparent;
     color: rgba(68, 68, 68, 0.5);
 }
+
 .modal-contact input:hover,
 .modal-contact textarea:hover {
     border-color: #b4b9bb;
@@ -268,6 +271,7 @@ h1 {
     border-color: #000000;
     color: #444444;
 }
+
 .modal-contact button {
     font: inherit;
 
@@ -284,11 +288,11 @@ h1 {
 .modal-contact button:focus {
     background-color: #e74246;
 }
+
 .modal-contact button:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #d7373b;
 }
-
 
 /* ---- Стили для страницы каталога ---- */
 
@@ -380,7 +384,6 @@ h1 {
 .pagination-item-current a {
     background-color: transparent;
 }
-
 
 .catalog-list {
     list-style: none;
