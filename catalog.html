@@ -5,6 +5,7 @@
     <title>Дизайн-студия «Нёрдс» — Магазин</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -31,7 +32,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset>
+          <fieldset class="filter-price">
             <legend>Стоимость:</legend>
             <!-- Здесь будет range с двумя ручками -->
             <p>
@@ -96,7 +97,7 @@
         <h2>Сортировать:</h2>
         <ul class="sorting-options">
           <li>
-            <a href="#">По цене</a>
+            <a href="#" class="selected">По цене</a>
           </li>
           <li>
             <a href="#">По типу</a>
@@ -121,7 +122,7 @@
             <div class="catalog-item-info-price">
               <h3>Sedona</h3>
               <p>Информационный сайт для туристов</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#">9900 руб.</a>
             </div>
             <img src="img/img-sedona.jpg" width="360" height="576"
              alt="Шаблон «Sedona»">
@@ -130,7 +131,7 @@
             <div class="catalog-item-info-price visually-hidden">
               <h3>Pink</h3>
               <p>Сайт мобильного приложения</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#">9900 руб.</a>
             </div>
             <img src="img/img-pink.jpg" width="360" height="576"
              alt="Шаблон «Pink»">
@@ -139,7 +140,7 @@
             <div class="catalog-item-info-price visually-hidden">
               <h3>Barbershop “Borodinski”</h3>
               <p>Сайт барбершопа</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#">9900 руб.</a>
             </div>
             <img src="img/img-barbershop.jpg" width="360" height="576"
              alt="Шаблон «Barbershop»">
@@ -148,7 +149,7 @@
             <div class="catalog-item-info-price visually-hidden">
               <h3>Mishka</h3>
               <p>Интернет магазин изделий ручной работы</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#">9900 руб.</a>
             </div>
             <img src="img/img-mishka.jpg" width="360" height="576"
              alt="Шаблон «Mishka»">
@@ -157,7 +158,7 @@
             <div class="catalog-item-info-price visually-hidden">
               <h3>A+</h3>
               <p>Сайт учебного заведения</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#">9900 руб.</a>
             </div>
             <img src="img/img-aplus.jpg" width="360" height="576"
              alt="Шаблон «A+»">
@@ -166,7 +167,7 @@
             <div class="catalog-item-info-price visually-hidden">
               <h3>Кваст</h3>
               <p>Промо-сайт крафтового кваса</p>
-              <a class="button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#">9900 руб.</a>
             </div>
             <img src="img/img-kvast.jpg" width="360" height="576"
              alt="Шаблон «Кваст»">

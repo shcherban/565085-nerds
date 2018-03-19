@@ -1,0 +1,417 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #283136;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+    text-align: center;
+}
+
+
+/* Навигация */
+
+.main-navigation {
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    color: #fb565a;
+}
+.site-navigation a:active,
+.user-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Слайдер */
+
+.slider {
+    background-color: #eeeeee;
+}
+
+.slider b {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    color: #000000;
+}
+
+.slider a {
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #fb565a;
+}
+.slider a:hover,
+.slider a:focus {
+    background-color: #e74246;
+}
+.slider a:active {
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.slider ul {
+    list-style: none;
+}
+
+
+/* Преимущества */
+
+.advantages h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.advantages a {
+    text-transform: uppercase;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: grey;
+}
+
+.advantages a:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-item:nth-child(1) a {
+    background-color: #fb565a;
+}
+.advantages-item:nth-child(1) a:hover,
+.advantages-item:nth-child(1) a:focus {
+    background-color: #e74246;
+}
+.advantages-item:nth-child(1) a:active {
+    background-color: #d7373b;
+}
+
+.advantages-item:nth-child(2) a {
+    background-color: #00ca74;
+}
+.advantages-item:nth-child(2) a:hover,
+.advantages-item:nth-child(2) a:focus {
+    background-color: #00bc6c;
+}
+.advantages-item:nth-child(2) a:active {
+    background-color: #00aa62;
+}
+
+.advantages-item:nth-child(3) a {
+    background-color: #efc84a;
+}
+.advantages-item:nth-child(3) a:hover,
+.advantages-item:nth-child(3) a:focus {
+    background-color: #eab534;
+}
+.advantages-item:nth-child(3) a:active {
+    background-color: #e5a722;
+}
+
+.advantages ul {
+    list-style: none;
+}
+
+
+/* Студия */
+
+.studio b {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #000000;
+}
+
+.studio h3 {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.studio ul {
+    list-style: none; /* TODO: сделать маркеры списка в виде тире цвета #fb565a */
+}
+
+.studio-quality-indicators th {
+    line-height: 18px;
+}
+
+.studio-quality-indicators td {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 10.06px;
+    color: #000000;
+}
+.studio-quality-indicators span {
+    vertical-align: super;
+    font-size: 0.5em;
+}
+
+
+/* Клиенты */
+
+.client-list {
+    list-style: none;
+}
+
+
+/* Подвал: карта, контакты */
+
+.contacts-card {
+    line-height: 18px;
+}
+
+.contacts-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #000000;
+}
+
+.contacts-card a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #fb565a;
+}
+
+
+/* Подвал: соцсети */
+
+.footer-social b {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.footer-social p {
+    line-height: 22px;
+    color: #444444;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+
+/* Модальное окно */
+
+.contact-form {
+    font: inherit;
+}
+
+.modal-contact h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+}
+/*
+.modal-contact label {
+    font-weight: 700;
+    line-height: 18px;
+    color: #000000;
+}
+*/
+
+.modal-contact input,
+.modal-contact textarea {
+    border: 2px solid #d7dcde;
+    border-radius: 1px;
+    background-color: transparent;
+    color: rgba(68, 68, 68, 0.5);
+}
+.modal-contact input:hover,
+.modal-contact textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.modal-contact input:focus,
+.modal-contact textarea:focus {
+    border-color: #000000;
+    color: #444444;
+}
+.modal-contact button {
+    font: inherit;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+
+    background-color: #fb565a;
+
+    border: none;
+}
+
+.modal-contact button:hover,
+.modal-contact button:focus {
+    background-color: #e74246;
+}
+.modal-contact button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}
+
+
+/* ---- Стили для страницы каталога ---- */
+
+.filters-form {
+    font: inherit;
+}
+
+.filters-form fieldset {
+    border: none;
+}
+
+.filters-form legend {
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.filters-form label {
+    line-height: 20px;
+}
+
+.filters-form input:hover + label,
+.filters-form input:focus + label {
+    color: #000000;
+}
+
+.filters-form input:disabled + label {
+    color: rgba(40, 49, 54, 0.3);
+}
+
+.filter-price label,
+.filter-price input[type="text"] {
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.filters ul,
+.sorting-options,
+.sorting-controls {
+    list-style: none;
+}
+
+.sorting h2 {
+    font-weight: 700;
+    line-height: 18px;
+    color: #000000;
+}
+
+.sorting a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.sorting a:hover,
+.sorting a:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting a.active,
+.sorting a.selected {
+    color: #000000;
+}
+
+.button,
+.pagination-item a {
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.button:hover,
+.button:focus,
+.pagination-item a:hover,
+.pagination-item a:focus {
+    background-color: #dfdfdf;
+}
+
+.button:active,
+.pagination-item a:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+    background-color: transparent;
+}
+
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item-info-price {
+    background-color: #eeeeee;
+}
+
+.catalog-item-info-price h3 {
+    font-weight: 700;
+    line-height: 30px;
+    color: #000000;
+}
+
+.catalog-item-info-price p {
+    line-height: 18px;
+    color: #666666;
+}
+
+.price-button {
+    color: #ffffff;
+    background-color: #fb565a;
+}
+
+.price-button:hover,
+.price-button:focus {
+    background-color: #e74246;
+}
+
+.price-button:active {
+    color: #ffffff;
+    background-color: #d7373b;
+}
