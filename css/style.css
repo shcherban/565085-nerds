@@ -527,10 +527,10 @@ input[type="radio"].visually-hidden {
     display: block;
     margin-top: 38px;
     width: 240px;
-    min-height: 50px;
     border-radius: 3px;
     text-align: center;
-    line-height: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .slide {
@@ -570,10 +570,10 @@ input[type="radio"].visually-hidden {
     display: block;
     margin-top: 32px;
     width: 160px;
-    min-height: 50px;
     border-radius: 3px;
     text-align: center;
-    line-height: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .studio-columns {
@@ -676,10 +676,10 @@ input[type="radio"].visually-hidden {
     margin-top: 37px;
     margin-left: 50px;
     width: 218px;
-    min-height: 50px;
     border-radius: 3px;
     text-align: center;
-    line-height: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .footer-columns {
@@ -806,15 +806,15 @@ input[type="radio"].visually-hidden {
 .pagination-item a {
     min-width: 49px;
     border-radius: 3px;
-    height: 49px;
     display: block;
-    height: 49px;
     text-align: center;
-    line-height: 49px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .pagination-item-current a {
     min-width: 45px;
-    height: 45px;
     border: 3px solid #eee;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
