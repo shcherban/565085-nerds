@@ -92,10 +92,6 @@ h1 {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.slider ul {
-    list-style: none;
-}
-
 /* Преимущества */
 
 .advantages h3 {
@@ -470,19 +466,26 @@ h1 {
     display: flex;
 }
 
-.slider ul {
+.slider {
+    min-height: 431px;
+}
+
+.slide-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .slide {
     border-top: 1px solid transparent;
     min-height: 430px;
+    width: 1160px; 
     background-image: url("../img/nerds-index-slide1.png");
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: top;
+    position: absolute;
 }
 
 .slide b {
@@ -506,10 +509,12 @@ h1 {
     line-height: 50px;
 }
 
-/* TODO: временно скрыл 2-й и 3-й слайды.
-   позже спрятать их за 1-й, используя z-index*/
-.slide-2, .slide-3 {
-    display: none;
+.slide {
+    z-index: -1;
+}
+
+.slide-current {
+    z-index: 0;
 }
 
 /* TODO: временно скрыл кнопки слайдера */
