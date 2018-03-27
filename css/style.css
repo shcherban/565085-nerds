@@ -679,6 +679,10 @@ input[type="radio"].visually-hidden {
     height: auto;
 }
 
+.footer-contacts iframe{
+    position: absolute;
+}
+
 .contacts-card {
     position: absolute;
     top: 56px;
