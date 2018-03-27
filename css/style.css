@@ -726,13 +726,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-column-1 {
-    width: 300px;
+    width: 380px;
 }
 
 .footer-column-2 {
     width: 760px;
     padding-left: 20px;
-    flex-grow: 1;
 }
 
 .social-button-list {
@@ -740,6 +739,19 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    justify-content: space-between;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
 }
 
 .modal-contact {
