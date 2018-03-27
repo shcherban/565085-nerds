@@ -85,6 +85,36 @@ input[type="radio"].visually-hidden {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.cart-link {
+    position: relative;
+    padding-left: 45px;
+}
+
+.cart-link::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+}
+
+.nav-current-link{
+    position: relative;
+}
+
+.nav-current-link::after {
+    position: absolute;
+    position: 0 0;
+    width: 100%;
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #fb565a;
+}
+
 /* Слайдер */
 
 .slider {
