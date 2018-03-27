@@ -35,19 +35,27 @@
         <section class="filters catalog-column-1">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset class="filter-price">
+            <fieldset class="filter-item">
               <legend>Стоимость:</legend>
-              <!-- Здесь будет range с двумя ручками -->
-              <p>
-                <label for="filter-price-min">От</label>
-                <input id="filter-price-min" name="min-price" type="text" value="0">
-              </p>
-              <p>
-                <label for="filter-price-max">до</label>
-                <input id="filter-price-max" name="max-price" type="text" value="15000">
-              </p>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 0%; width: 65%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">От
+                    <input name="min-price" type="text" value="0">
+                  </label>
+                  <label class="max-price">до
+                    <input name="max-price" type="text" value="15000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Сетка:</legend>
               <ul>
                 <li>
@@ -67,7 +75,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Особенности:</legend>
               <ul>
                 <li>

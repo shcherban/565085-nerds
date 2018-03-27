@@ -328,11 +328,14 @@ input[type="radio"].visually-hidden {
     font: inherit;
 }
 
-.filters-form fieldset {
+.filters-item {
+    margin: 0;
+    padding: 0;
     border: none;
 }
 
 .filters-form legend {
+    font-size: 18px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
@@ -754,7 +757,7 @@ input[type="radio"].visually-hidden {
 .sorting {
     display: flex;
     min-height: 140px;
-    margin-top: 40px;
+    margin-top: 44px;
     align-items: baseline;
 }
 
@@ -764,6 +767,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting h2 {
+    margin: 0;
     margin-right: 20px;
 }
 
@@ -817,4 +821,89 @@ input[type="radio"].visually-hidden {
     border: 3px solid #eee;
     padding-top: 13px;
     padding-bottom: 13px;
+}
+
+/* Фильтр */
+
+.filters-form{
+    margin-top: 40px;
+}
+
+.filter-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 49px;
+}
+
+.range-controls {
+    position: relative;
+    height: 2px;
+    margin-bottom: 15px;
+    padding: 39px 20px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.range-controls .bar {
+    height: 2px;
+    background-color: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+
+.range-controls .toggle-max {
+    left: 163px;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls label {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.price-controls input {
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.max-price {
+    text-align: right;
 }
