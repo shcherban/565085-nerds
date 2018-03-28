@@ -273,6 +273,10 @@ input[type="radio"].visually-hidden {
     background-color: #fb565a;
 }
 
+.footer-contacts iframe {
+    background-color: #eee; /* серый фон, чтобы при масштабировании карты не проглядывала картинка */
+}
+
 /* Подвал: соцсети */
 
 .footer-social b {
