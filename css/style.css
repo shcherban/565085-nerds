@@ -336,7 +336,22 @@ input[type="radio"].visually-hidden {
 /* Клиенты */
 
 .client-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.client-item {
+    opacity: 0.2;
+}
+
+.client-item:hover,
+.client-item:focus {
+    opacity: 1;
+}
+
+.client-item:active {
+    opacity: 0.1;
 }
 
 /* Подвал: карта, контакты */
