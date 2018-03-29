@@ -566,6 +566,32 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
+/* Сортировка */
+
+.sorting {
+    display: flex;
+    min-height: 140px;
+    margin-top: 44px;
+    align-items: baseline;
+}
+
+.sorting h2 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.sorting-options {
+    width: 300px;
+    margin: 0;
+    /* margin-left: auto; */
+    padding: 0;
+    display: flex;
+}
+
+.sorting-options li {
+    margin-right: 26px;
+}
+
 .sorting h2 {
     font-size: 18px;
     font-weight: 700;
@@ -589,6 +615,39 @@ input[type="radio"].visually-hidden {
 .sorting a.active,
 .sorting a.selected {
     color: #000000;
+}
+
+.sorting-controls {
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sorting-controls a {
+    width: 0;
+    height: 0;
+    border: 10px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.sorting-controls .control-up {
+    border-top-width: 0;
+}
+
+.sorting-controls .control-down {
+    border-bottom-width: 0;
+}
+
+.control-up.disabled {
+    border-bottom-color: #a6a6a6;
+}
+
+.control-down.disabled {
+    border-top-color: #a6a6a6;
 }
 
 .catalog-list {
@@ -895,41 +954,12 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
 }
 
-.sorting {
-    display: flex;
-    min-height: 140px;
-    margin-top: 44px;
-    align-items: baseline;
-}
-
 .catalog-item-info-price {
     /* TODO: временно скрыл карточку шаблона, чтобы не мешал сетке */
     display: none;
 }
 
-.sorting h2 {
-    margin: 0;
-    margin-right: 20px;
-}
-
-.sorting-options {
-    width: 300px;
-    margin: 0;
-    margin-left: auto;
-    padding: 0;
-    display: flex;
-}
-
-.sorting-options li {
-    margin-right: 26px;
-}
-
-.sorting-controls {
-    width: 60px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+/* Пагинация */
 
 .pagination {
     margin: 0;
