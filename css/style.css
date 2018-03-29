@@ -115,6 +115,15 @@ input[type="radio"].visually-hidden {
     background-color: #fb565a;
 }
 
+.link-header-logo:hover,
+.link-header-logo:focus {
+    opacity: 0.8;
+}
+
+.link-header-logo:active {
+    opacity: 0.3;
+}
+
 /* Слайдер */
 
 .slider {
