@@ -202,7 +202,7 @@ input[type="radio"].visually-hidden {
 .slider-button {
     width: 20px;
     height: 20px;
-    margin: 10px;
+    margin: 0 10px;
     border-radius: 50%;
     background-color: #fff;
     cursor: poiter;
@@ -647,38 +647,32 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
-.sorting-controls {
+.sorting-control-list {
     width: 60px;
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    justify-content: flex-end;
 }
 
-.sorting-controls a {
-    padding: 5px;
-    margin: 5px;
+.sorting-control {
+    padding: 0;
+    margin-left: 18px;
 }
 
-/* 
-.sort-control {
-    padding: 5px;
-    margin: 5px;
-}
-*/
-
-.sort-control path {
+.sorting-control path {
     fill: #a6a6a6;
     opacity: 0.2;
 }
 
-.sort-control:hover path {
+.sorting-control:hover path {
     fill: #a6a6a6;
     opacity: 1;
 }
 
-.sort-control:active path,
-.sort-control.active path{
+.sorting-control:active path,
+.sorting-control.active path{
     fill: #000000;
 }
 
