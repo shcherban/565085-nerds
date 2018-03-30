@@ -100,7 +100,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button-show" type="submit">Показать</button>
+            <button class="button-show button" type="submit">Показать</button>
           </form>
         </section>
         <div class="catalog-column-2">
@@ -119,17 +119,23 @@
             </ul>
             <ul class="sorting-controls">
               <li>
-                <a href="#" class="control-down"><span class="visually-hidden">Вниз</span></a>
+                <a href="#" class="control-down sort-control active">
+                  <span class="visually-hidden">Вниз</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                </a>
               </li>
               <li>
-                <a href="#" class="control-up disabled"><span class="visually-hidden">Вверх</span></a>
+                <a href="#" class="control-up sort-control">
+                  <span class="visually-hidden">Вверх</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                </a>
               </li>
             </ul>
           </section>
           <section class="catalog">
             <h2 class="visually-hidden">Каталог</h2>
             <ul class="catalog-list">
-              <li class="catalog-item">
+              <li class="catalog-item selected">
                 <div class="catalog-item-info-price">
                   <h3>Sedona</h3>
                   <p>Информационный сайт для туристов</p>

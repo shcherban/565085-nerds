@@ -450,8 +450,7 @@ input[type="radio"].visually-hidden {
 /* Фильтр */
 
 .filters-form{
-    margin-top: 40px;
-    /* font: inherit; */
+    font: inherit;
 }
 
 .filter-item {
@@ -570,29 +569,15 @@ input[type="radio"].visually-hidden {
 
 .sorting {
     display: flex;
-    min-height: 140px;
-    margin-top: 44px;
+    /* margin-top: 44px; */
     align-items: baseline;
 }
 
 .sorting h2 {
+    padding: 0;
     margin: 0;
     margin-right: 20px;
-}
-
-.sorting-options {
-    width: 300px;
-    margin: 0;
-    /* margin-left: auto; */
-    padding: 0;
-    display: flex;
-}
-
-.sorting-options li {
-    margin-right: 26px;
-}
-
-.sorting h2 {
+    width: 360px;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -600,38 +585,88 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
-.sorting a {
+.sorting-options {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sorting-options li {
+    padding: 0;
+    margin: 0;
+    margin-right: 25px;
+}
+
+.sorting-options a {
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    white-space: nowrap;
     color: rgba(0, 0, 0, 0.3)
 }
 
-.sorting a:hover,
-.sorting a:focus {
+.sorting-options a:hover,
+.sorting-options a:focus {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting a.active,
-.sorting a.selected {
+.sorting-options a:active,
+.sorting-options a.selected {
     color: #000000;
 }
 
 .sorting-controls {
-    width: 40px;
+    width: 60px;
     margin: 0;
     padding: 0;
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 
 .sorting-controls a {
+    padding: 5px;
+    margin: 5px;
+}
+
+/* 
+.sort-control {
+    padding: 5px;
+    margin: 5px;
+}
+*/
+
+.sort-control path {
+    fill: #a6a6a6;
+    opacity: 0.2;
+}
+
+.sort-control:hover path {
+    fill: #a6a6a6;
+    opacity: 1;
+}
+
+.sort-control:active path,
+.sort-control.active path{
+    fill: #000000;
+}
+
+/* .sorting-controls a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
     width: 0;
     height: 0;
-    border: 10px solid #000;
+    border: 10px solid #a6a6a6;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
+    opacity: 0.2;
 }
 
 .sorting-controls .control-up {
@@ -642,15 +677,27 @@ input[type="radio"].visually-hidden {
     border-bottom-width: 0;
 }
 
-.control-up.disabled {
-    border-bottom-color: #a6a6a6;
+.control-up:hover {
+    opacity: 1;
 }
 
-.control-down.disabled {
-    border-top-color: #a6a6a6;
+.control-down:hover {
+    opacity: 1;
 }
+
+.control-up.active,
+.control-up:active {
+    border-bottom-color: #000;
+}
+
+.control-down.active,
+.control-down:active {
+    border-top-color: #000;
+} */
 
 .catalog-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -929,6 +976,7 @@ input[type="radio"].visually-hidden {
 .catalog-content {
     display: flex;
     justify-content: space-between;
+    padding-top: 60px;
 }
 
 .catalog-column-1 {
@@ -942,21 +990,71 @@ input[type="radio"].visually-hidden {
 .catalog-list {
     margin: 0;
     padding: 0;
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .catalog-item {
+    position: relative;
+    width: 360px;
+    height: 617px;
     margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.catalog-item img {
+    outline: 1px solid rgba(0, 1, 1, 0.1);
 }
 
 .catalog-item:nth-child(2n) {
     margin-right: 0;
 }
 
+.catalog-item::before {
+    content: "";
+    display: block;
+    width: 360px;
+    height: 40px;
+    margin-bottom: 1px;
+    background-image: url("../img/browser.svg");
+    opacity: 0.12;
+}
+
+.catalog-item.selected::before {
+    opacity: 1;
+}
+
 .catalog-item-info-price {
-    /* TODO: временно скрыл карточку шаблона, чтобы не мешал сетке */
-    display: none;
+    position: absolute;
+    width: 360px;
+    height: 230px;
+    left: 0;
+    bottom: 0;
+}
+
+.catalog-item-info-price h3 {
+    margin: 0;
+    margin-top: 32px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.catalog-item-info-price p {
+    line-height: 18px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 239px;
+}
+
+.catalog-item-info-price .button {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
 }
 
 /* Пагинация */
