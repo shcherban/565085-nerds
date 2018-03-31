@@ -369,6 +369,7 @@ input[type="radio"].visually-hidden {
 
 .client-item {
     opacity: 0.2;
+    width: 220px;
 }
 
 .client-item:hover,
@@ -674,6 +675,7 @@ input[type="radio"].visually-hidden {
 .sorting-control:active path,
 .sorting-control.active path{
     fill: #231f20;
+    opacity: 1;
 }
 
 /* .sorting-controls a {
