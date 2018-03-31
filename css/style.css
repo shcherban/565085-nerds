@@ -205,7 +205,7 @@ input[type="radio"].visually-hidden {
     margin: 0 10px;
     border-radius: 50%;
     background-color: #fff;
-    cursor: poiter;
+    cursor: pointer;
 }
 
 .slider-button.active {
