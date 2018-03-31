@@ -596,7 +596,6 @@ input[type="radio"].visually-hidden {
 
 .sorting {
     display: flex;
-    /* margin-top: 44px; */
     align-items: baseline;
 }
 
@@ -677,45 +676,6 @@ input[type="radio"].visually-hidden {
     fill: #231f20;
     opacity: 1;
 }
-
-/* .sorting-controls a {
-    display: block;
-    padding: 0;
-    margin: 0;
-    margin-left: 20px;
-    width: 0;
-    height: 0;
-    border: 10px solid #a6a6a6;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    opacity: 0.2;
-}
-
-.sorting-controls .control-up {
-    border-top-width: 0;
-}
-
-.sorting-controls .control-down {
-    border-bottom-width: 0;
-}
-
-.control-up:hover {
-    opacity: 1;
-}
-
-.control-down:hover {
-    opacity: 1;
-}
-
-.control-up.active,
-.control-up:active {
-    border-bottom-color: #000;
-}
-
-.control-down.active,
-.control-down:active {
-    border-top-color: #000;
-} */
 
 .catalog-list {
     margin: 0;
