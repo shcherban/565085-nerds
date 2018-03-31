@@ -1098,11 +1098,16 @@ input[type="radio"].visually-hidden {
     opacity: 0.12;
 }
 
-.catalog-item.selected::before {
+.catalog-item:hover::before {
     opacity: 1;
 }
 
+.catalog-item:hover .catalog-item-info-price {
+    display: block;
+}
+
 .catalog-item-info-price {
+    display: none;
     position: absolute;
     width: 360px;
     height: 230px;
