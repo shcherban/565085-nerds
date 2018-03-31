@@ -910,6 +910,7 @@ input[type="radio"].visually-hidden {
     padding-top: 70px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .footer-column-1 {
@@ -953,6 +954,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-contact {
+    display: none; /* временно скроем модальное окно */
     position: fixed;
     top: 50%;
     left: 50%;
