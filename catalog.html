@@ -252,20 +252,22 @@
     <section class="modal modal-contact">
       <h2>Напишите нам</h2>
       <form class="contact-form" action="http://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label for="contact-form-name">Ваше имя:</label>
-          <input id="contact-form-name" type="text"
-            name="contact-form-name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label>Ваш e-mail:</label>
-          <input id="contact-form-email" type="email"
-            name="contact-form-email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="contact-form-message">Текст письма:</label>
-          <textarea id="contact-form-message">В свободной форме</textarea>
-        </p>
+        <div class="contact-form-container">
+          <p>
+            <label for="contact-form-name">Ваше имя:</label>
+            <input id="contact-form-name" type="text"
+              name="contact-form-name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label>Ваш e-mail:</label>
+            <input id="contact-form-email" type="email"
+              name="contact-form-email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="contact-form-message">Текст письма:</label>
+            <textarea id="contact-form-message" name="contact-form-message">В свободной форме</textarea>
+          </p>
+        </div>
         <button class="button button-send" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>

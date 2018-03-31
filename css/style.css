@@ -953,12 +953,90 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-contact {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -295px;
+    box-sizing: border-box;
     width: 960px;
-    height: 592px;
+    height: 590px;
+    padding-top: 67px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+    z-index: 30;
+}
+
+.modal-contact h2 {
+    margin: 0;
+    margin-bottom: 6px;
+    padding: 0;
+}
+
+.modal-close {
+    width: 22px;
+    height: 22px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../img/close-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+    position: absolute;
+    top: 77px;
+    right: 85px;
+    opacity: 0.3;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    opacity: 1;
+    outline: none;
+}
+
+.modal-close:active {
+    opacity: 0.1;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-form input {
+    display: block;
+    width: 360px;
+    height: 50px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.contact-form textarea {
+    width: 760px;
+    height: 114px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    margin-top: 10px;
 }
 
 .modal-contact textarea {
     resize: none;
+}
+
+.modal-contact p {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.button-send {
+    margin-top: 50px;
 }
 
 /* Каталог */
