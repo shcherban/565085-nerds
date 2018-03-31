@@ -296,6 +296,12 @@ input[type="radio"].visually-hidden {
     color: rgb(0, 0, 0);
 }
 
+.button-show {
+    border: 0;
+    width: 260px;
+    margin-top: 35px;
+}
+
 /* Преимущества */
 
 .advantages-list {
@@ -771,7 +777,7 @@ input[type="radio"].visually-hidden {
     background-color: #d7373b;
 }
 
-/* ---- Стили для страницы каталога ---- */
+/*** Каталог ***/
 
 /* Фильтр */
 
@@ -787,7 +793,7 @@ input[type="radio"].visually-hidden {
 
 .range-filter {
     width: 260px;
-    margin-top: 49px;
+    margin-top: 50px;
 }
 
 .range-controls {
@@ -868,14 +874,22 @@ input[type="radio"].visually-hidden {
 
 .filters-form label {
     line-height: 20px;
+    position: relative;
+    cursor: pointer;
 }
 
-.filters-form input:hover + label,
-.filters-form input:focus + label {
-    color: #000000;
+.layout-filter {
+    margin-top: 55px;
 }
 
-.filters-form input:disabled + label {
+.layout-radio:hover,
+.layout-radio:focus,
+.feature-checkbox:hover,
+.feature-checkbox:focus {
+    color: #000;
+}
+
+.filters-form input:disabled ~ .label-content {
     color: rgba(40, 49, 54, 0.3);
 }
 
@@ -885,10 +899,78 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.filters ul,
-.sorting-options,
-.sorting-controls {
+.filters ul {
     list-style: none;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.layout-radio,
+.feature-checkbox {
+    display: block;
+    padding-left: 35px;
+    margin-bottom: 19px;
+}
+
+.features-filter {
+    margin-top: 30px;
+}
+
+.layout-radio input[type="radio"] + .radio-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.4;
+}
+
+.layout-radio input[type="radio"]:hover + .radio-indicator {
+    opacity: 1;
+}
+
+.layout-radio input[type="radio"]:focus + .radio-indicator {
+    opacity: 1;
+}
+
+.layout-radio input[type="radio"]:checked + .radio-indicator {
+    background-image: url("../img/radio-on.svg");
+}
+
+.layout-radio input[type="radio"]:disabled + .radio-indicator {
+    opacity: 0.1;
+}
+
+.feature-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.4;
+}
+
+.feature-checkbox input[type="checkbox"]:hover + .checkbox-indicator {
+    opacity: 1;
+}
+
+.feature-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+    opacity: 1;
+}
+
+.feature-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.feature-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+    opacity: 0.1;
 }
 
 /* Сортировка */
@@ -1015,8 +1097,6 @@ input[type="radio"].visually-hidden {
     color: #fff;
     background-color: #d7373b;
 }
-
-/* Каталог */
 
 .main-catalog h1 {
     background-color: #eee;

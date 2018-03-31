@@ -35,7 +35,7 @@
         <section class="filters catalog-column-1">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset class="filter-item">
+            <fieldset class="filter-item price-filter">
               <legend>Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
@@ -55,52 +55,76 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="filter-item">
+            <fieldset class="filter-item layout-filter">
               <legend>Сетка:</legend>
               <ul>
                 <li>
-                  <input class="visually-hidden" id="filter-adaptive"
-                  name="layout" value="adaptive" type="radio" checked>
-                  <label for="filter-adaptive">Адаптивная</label>
+                  <label class="layout-radio">
+                    <input class="visually-hidden" id="filter-adaptive"
+                      name="layout" value="adaptive" type="radio" checked>
+                    <span class="radio-indicator"></span>
+                    <span class="label-content">Адаптивная</span>
+                  </label>
                 </li>
                 <li>
-                  <input class="visually-hidden" id="filter-fixed"
-                  name="layout" value="fixed" type="radio">
-                  <label for="filter-fixed">Фиксированная</label>
+                  <label class="layout-radio">
+                    <input class="visually-hidden" id="filter-fixed"
+                      name="layout" value="fixed" type="radio">
+                    <span class="radio-indicator"></span>
+                    <span class="label-content">Фиксированная</span>
+                  </label>
                 </li>
                 <li>
-                  <input class="visually-hidden" id="filter-rubber"
-                  name="layout" value="rubber" type="radio">
-                  <label for="filter-rubber">Резиновая</label>
+                  <label class="layout-radio">
+                    <input class="visually-hidden" id="filter-rubber"
+                      name="layout" value="rubber" type="radio">
+                    <span class="radio-indicator"></span>
+                    <span class="label-content">Резиновая</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-item">
+            <fieldset class="filter-item features-filter">
               <legend>Особенности:</legend>
               <ul>
                 <li>
-                  <input id="filter-feature-slider" name="slider" class="visually-hidden" type="checkbox" checked>
-                  <label for="filter-feature-slider">Слайдер</label>
+                  <label class="feature-checkbox">
+                    <input id="filter-feature-slider" name="slider" class="visually-hidden" type="checkbox" checked>
+                    <span class="checkbox-indicator"></span>
+                    <span class="label-content">Слайдер</span>
+                  </label>
                 </li>
                 <li>
-                  <input id="filter-feature-features" name="features" class="visually-hidden" type="checkbox">
-                  <label for="filter-feature-features">Блок преимуществ</label>
+                  <label class="feature-checkbox">
+                    <input id="filter-feature-features" name="features" class="visually-hidden" type="checkbox">
+                    <span class="checkbox-indicator"></span>
+                    <span class="label-content">Блок преимуществ</span>
+                  </label>
                 </li>
                 <li>
-                  <input id="filter-feature-news" name="news" class="visually-hidden" type="checkbox" checked>
-                  <label for="filter-feature-news">Новости</label>
+                  <label class="feature-checkbox">
+                    <input id="filter-feature-news" name="news" class="visually-hidden" type="checkbox" checked>
+                    <span class="checkbox-indicator"></span>
+                    <span class="label-content">Новости</span>
+                  </label>
                 </li>
                 <li>
-                  <input id="filter-feature-gallery" name="gallery" class="visually-hidden" type="checkbox">
-                  <label for="filter-feature-gallery">Галерея</label>
+                  <label class="feature-checkbox">
+                    <input id="filter-feature-gallery" name="gallery" class="visually-hidden" type="checkbox">
+                    <span class="checkbox-indicator"></span>
+                    <span class="label-content">Галерея</span>
+                  </label>
                 </li>
                 <li>
-                  <input id="filter-feature-cart" name="cart" class="visually-hidden" type="checkbox">
-                  <label for="filter-feature-cart">Корзина</label>
+                  <label class="feature-checkbox">
+                    <input id="filter-feature-cart" name="cart" class="visually-hidden" type="checkbox">
+                    <span class="checkbox-indicator"></span>
+                    <span class="label-content">Корзина</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
-            <button class="button-show button" type="submit">Показать</button>
+            <button class="button button-show" type="submit">Показать</button>
           </form>
         </section>
         <div class="catalog-column-2">
