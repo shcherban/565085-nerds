@@ -777,8 +777,7 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
     display: block;
-    animation-name: come-from-left;
-    animation-duration: 0.5s;
+    animation: come-from-left 0.5s;
 }
 
 .modal-error {
@@ -787,18 +786,30 @@ input[type="radio"].visually-hidden {
 
 @keyframes come-from-left {
     0% {
+        -webkit-transform: translateX(2000px) rotate(45deg);
+        -moz-transform: translateX(2000px) rotate(45deg);
+        -ms-transform: translateX(2000px) rotate(45deg);
         transform: translateX(2000px) rotate(45deg);
     }
 
     90% {
+        -webkit-transform: translateX(0)  rotate(15deg);
+        -moz-transform: translateX(0)  rotate(15deg);
+        -ms-transform: translateX(0)  rotate(15deg);
         transform: translateX(0)  rotate(15deg);
     }
 
     90% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
         transform: rotate(0deg);
     }
 
     100% {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
         transform: rotate(0);
     }
 }
@@ -806,6 +817,9 @@ input[type="radio"].visually-hidden {
 @keyframes shake {
     0%,
     100% {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
         transform: rotate(0);
     }
 
@@ -814,6 +828,9 @@ input[type="radio"].visually-hidden {
     50%,
     70%,
     90% {
+        -webkit-transform: rotate(-0.7deg);
+        -moz-transform: rotate(-0.7deg);
+        -ms-transform: rotate(-0.7deg);
         transform: rotate(-0.7deg);
     }
 
@@ -821,6 +838,9 @@ input[type="radio"].visually-hidden {
     40%,
     60%,
     80% {
+        -webkit-transform: rotate(0.7deg);
+        -moz-transform: rotate(0.7deg);
+        -ms-transform: rotate(0.7deg);
         transform: rotate(0.7deg);
     }
 }
