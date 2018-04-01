@@ -818,6 +818,11 @@ input[type="radio"].visually-hidden {
     }
 }
 
+.modal-contact .invalid {
+    border-color: #e74246;
+    color: #e74246;
+}
+
 /*** Каталог ***/
 
 /* Фильтр */
