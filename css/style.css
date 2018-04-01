@@ -590,10 +590,19 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
+.contacts-card-container {
+    position: absolute;
+    width: 1200px;
+    height: 416px;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+}
+
 .contacts-card {
     position: absolute;
     top: 53px;
-    left: 95px;
+    left: 20px;
     width: 320px;
     height: 308px;
     background-color: #fff;
