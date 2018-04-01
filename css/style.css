@@ -531,45 +531,38 @@ input[type="radio"].visually-hidden {
     background-color: #eee; /* серый фон, чтобы при масштабировании карты не проглядывала картинка */
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 
 .footer-contacts {
-    margin-top: 85px;
+    margin-top: 82px;
+    min-height: 416px;
     position: relative;
-}
-
-.footer-contacts img {
-    width: 100%;
-    height: auto;
-}
-
-.footer-contacts iframe{
-    position: absolute;
 }
 
 .contacts-card {
     position: absolute;
-    top: 56px;
-    left: 140px;
+    top: 53px;
+    left: 95px;
     width: 320px;
     height: 308px;
     background-color: #fff;
 }
 
 .contacts-card h3 {
-    margin-top: 55px;
+    margin-top: 50px;
     margin-left: 50px;
     text-transform: uppercase;
 }
 
 .contacts-card-address {
     margin-top: 23px;
-    margin-left: 50px;
+    margin-left: 51px;
 }
 
 .contacts-card-phone {
     margin-top: 18px;
-    margin-left: 50px;
+    margin-left: 51px;
 }
 
 .contacts-card-write-us {
