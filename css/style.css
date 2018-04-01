@@ -45,14 +45,6 @@ input[type="radio"].visually-hidden {
     margin: auto;
 }
 
-.main-catalog h1 {
-    font-weight: 500;
-    font-size: 55px;
-    line-height: 55px;
-    color: #000000;
-    text-align: center;
-}
-
 /* Навигация */
 
 .main-header {
@@ -840,7 +832,7 @@ input[type="radio"].visually-hidden {
 
 .range-filter {
     width: 260px;
-    margin-top: 50px;
+    margin-top: 47px;
 }
 
 .range-controls {
@@ -886,6 +878,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls {
     font-size: 0;
+    margin-top: 16px;
 }
 
 .price-controls label {
@@ -898,7 +891,7 @@ input[type="radio"].visually-hidden {
 .price-controls input {
     width: 60px;
     padding: 8px 10px;
-    margin-left: 10px;
+    margin-left: 8px;
     font-size: 16px;
     text-align: center;
     color: #283136;
@@ -949,25 +942,25 @@ input[type="radio"].visually-hidden {
 .filters ul {
     list-style: none;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 16px;
     padding: 0;
 }
 
 .layout-radio,
 .feature-checkbox {
     display: block;
-    padding-left: 35px;
-    margin-bottom: 19px;
+    padding-left: 37px;
+    margin-bottom: 20px;
 }
 
 .features-filter {
-    margin-top: 30px;
+    margin-top: 27px;
 }
 
 .layout-radio input[type="radio"] + .radio-indicator {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -2px;
+    left: 2px;
     width: 27px;
     height: 27px;
     background-image: url("../img/radio-off.svg");
@@ -994,8 +987,8 @@ input[type="radio"].visually-hidden {
 
 .feature-checkbox input[type="checkbox"] + .checkbox-indicator {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -2px;
+    left: 2px;
     width: 27px;
     height: 27px;
     background-image: url("../img/checkbox-off.svg");
@@ -1149,13 +1142,18 @@ input[type="radio"].visually-hidden {
     background-color: #eee;
     margin: 0;
     padding-top: 70px;
-    padding-bottom: 110px;
+    padding-bottom: 108px;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+    text-align: center;
 }
 
 .catalog-content {
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 56px;
 }
 
 .catalog-column-1 {
