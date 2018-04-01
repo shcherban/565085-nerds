@@ -1269,6 +1269,6 @@ input[type="radio"].visually-hidden {
     padding-bottom: 13px;
 }
 
-/* .main-catalog .footer-contacts {
-    margin-top: 0;
-} */
+.main-catalog .footer-contacts {
+    margin-top: 60px;
+}
