@@ -490,21 +490,77 @@ input[type="radio"].visually-hidden {
     min-height: 180px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
 }
 
 .client-item {
-    opacity: 0.2;
-    width: 220px;
+    width: 290px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #eee;
+    height: 52px;
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-item:last-child {
+    border-right: none;
+}
+
+.client-item:nth-child(1) {
+    width: 280px;
+    position: relative;
+}
+
+.client-item:nth-child(1) img {
+    position: absolute;
+    top: -4px;
+    left: 29px;
+}
+
+.client-item:nth-child(2) {
+    width: 300px;
+    position: relative;
+}
+
+.client-item:nth-child(2) img {
+    position: absolute;
+    top: -22px;
+    left: 43px;
+}
+
+.client-item:nth-child(3) {
+    width: 300px;
+    position: relative;
+}
+
+.client-item:nth-child(3) img {
+    position: absolute;
+    top: 0;
+    left: 55px;
+}
+
+.client-item:nth-child(4) {
+    width: 280px;
+    position: relative;
+}
+
+.client-item:nth-child(4) img {
+    position: absolute;
+    top: -13px;
+    left: 61px;
+}
+
+.client-item img {
+    opacity: 0.2;
+}
+
+.client-item:hover img,
+.client-item:focus img {
     opacity: 1;
 }
 
-.client-item:active {
+.client-item:active img {
     opacity: 0.1;
 }
 
