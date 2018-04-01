@@ -408,6 +408,7 @@ input[type="radio"].visually-hidden {
 
 .service-item {
     position: relative;
+    margin-bottom: 24px;
 }
 
 .service-item::before {
