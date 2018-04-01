@@ -893,6 +893,7 @@ input[type="radio"].visually-hidden {
     width: 50%;
     font-size: 16px;
     text-transform: uppercase;
+    text-align: baseline;
 }
 
 .price-controls input {
