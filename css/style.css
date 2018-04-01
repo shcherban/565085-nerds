@@ -639,8 +639,9 @@ input[type="radio"].visually-hidden {
 
 /* Модальное окно */
 
-.modal-contact {
-    display: none; /* временно скроем модальное окно */
+.modal-contact,
+.contact-page {
+    /* display: none; */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -655,6 +656,10 @@ input[type="radio"].visually-hidden {
     background-color: #fff;
     box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
     z-index: 30;
+}
+
+.modal-contact {
+    display: none;
 }
 
 .modal-close {
@@ -703,7 +708,8 @@ input[type="radio"].visually-hidden {
     font: inherit;
 }
 
-.modal-contact h2 {
+.modal-contact h2,
+.contact-page h2 {
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
@@ -713,21 +719,21 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
-.modal-contact label {
+.contact-form label {
     font-weight: 700;
     line-height: 18px;
     color: #000000;
 }
 
-.modal-contact input,
-.modal-contact textarea {
+.contact-form input,
+.contact-form textarea {
     border: 2px solid #d7dcde;
     border-radius: 1px;
     background-color: transparent;
     color: rgba(68, 68, 68, 0.5);
 }
 
-.modal-contact textarea {
+.contact-form textarea {
     resize: none;
     width: 760px;
     height: 114px;
@@ -736,18 +742,18 @@ input[type="radio"].visually-hidden {
     margin-top: 10px;
 }
 
-.modal-contact input:hover,
-.modal-contact textarea:hover {
+.contact-form input:hover,
+.contact-form textarea:hover {
     border-color: #b4b9bb;
 }
 
-.modal-contact input:focus,
-.modal-contact textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     border-color: #000000;
     color: #444444;
 }
 
-.modal-contact p {
+.contact-form p {
     margin: 0;
     margin-top: 30px;
     padding: 0;
@@ -819,7 +825,7 @@ input[type="radio"].visually-hidden {
     }
 }
 
-.modal-contact .invalid {
+.contact-form .invalid {
     border-color: #e74246;
     color: #e74246;
 }
