@@ -437,7 +437,8 @@ input[type="radio"].visually-hidden {
     border-collapse: collapse;
 }
 
-.studio-quality-indicators td, th {
+.studio-quality-indicators td,
+.studio-quality-indicators th {
     min-width: 120px;
     padding: 0;
     text-align: left;
