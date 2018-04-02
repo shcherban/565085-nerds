@@ -7,6 +7,9 @@
       var message = form.querySelector("[name=contact-form-message]");
       var isStorageSupport = true;
       var storage = "";
+      var sliderButtons = document.querySelectorAll(".slider-button");
+      var slides = document.querySelectorAll(".slide");
+
       try {
         storageName = localStorage.getItem("name1");
         storageEmail = localStorage.getItem("email");
@@ -77,3 +80,10 @@
       message.addEventListener("focus", function (evt) {
         message.classList.remove("invalid");
       })
+
+      sliderButtons.forEach(button => {
+        button.addEventListener("click", function (evt) {
+          button
+
+        })
+      });
