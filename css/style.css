@@ -163,11 +163,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     border-top: 1px solid transparent;
     min-height: 430px;
-    width: 1160px; 
-    background-image: url("../img/nerds-index-slide1.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: top;
+    width: 1160px;
     background-color: #eeeeee;
 }
 
@@ -185,6 +181,13 @@ input[type="radio"].visually-hidden {
     max-width: 460px;
     margin-top: 25px;
     margin-bottom: 170px;
+}
+
+.slide img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .slide a {

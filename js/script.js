@@ -7,8 +7,12 @@
       var message = form.querySelector("[name=contact-form-message]");
       var isStorageSupport = true;
       var storage = "";
-      var sliderButtons = document.querySelectorAll(".slider-button");
-      var slides = document.querySelectorAll(".slide");
+      var slide1 = document.querySelector(".slide-1");
+      var slide2 = document.querySelector(".slide-2");
+      var slide3 = document.querySelector(".slide-3");
+      var button1 = document.querySelector(".slider-button-1");
+      var button2 = document.querySelector(".slider-button-2");
+      var button3 = document.querySelector(".slider-button-3");
 
       try {
         storageName = localStorage.getItem("name1");
@@ -81,9 +85,29 @@
         message.classList.remove("invalid");
       })
 
-      sliderButtons.forEach(button => {
-        button.addEventListener("click", function (evt) {
-          button
-
-        })
+      button1.addEventListener("click", function (evt) {
+          clearSliderState();
+          slide1.classList.add("slide-current");
+          button1.classList.add("active");
       });
+
+      button2.addEventListener("click", function (evt) {
+          clearSliderState();
+          slide2.classList.add("slide-current");
+          button2.classList.add("active");
+      });
+
+      button3.addEventListener("click", function (evt) {
+          clearSliderState();
+          slide3.classList.add("slide-current");
+          button3.classList.add("active");
+      });
+
+      function clearSliderState() {
+          slide1.classList.remove("slide-current");
+          slide2.classList.remove("slide-current");
+          slide3.classList.remove("slide-current");
+          button1.classList.remove("active");
+          button2.classList.remove("active");
+          button3.classList.remove("active");
+      }
