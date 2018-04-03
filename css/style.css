@@ -711,7 +711,6 @@ input[type="radio"].visually-hidden {
 
 .modal-contact,
 .contact-page {
-    /* display: none; */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1212,10 +1211,21 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-info-price {
+    display: none;
+    position: absolute;
+    width: 360px;
+    min-height: 230px;
+    left: 0;
+    bottom: 0;
     background-color: #eeeeee;
 }
 
-.catalog-item-info-price h3 {
+.show-item-link {
+    display: block;
+    margin: 0;
+    margin-top: 32px;
+    padding: 0;
+    font-size: 18px;
     font-weight: 700;
     line-height: 30px;
     color: #000000;
@@ -1224,12 +1234,19 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-info-price p {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 239px;
     line-height: 18px;
     color: #666666;
     text-align: center;
 }
 
 .price-button {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
     background-color: #fb565a;
 }
 
@@ -1309,39 +1326,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover .catalog-item-info-price {
     display: block;
-}
-
-.catalog-item-info-price {
-    display: none;
-    position: absolute;
-    width: 360px;
-    height: 230px;
-    left: 0;
-    bottom: 0;
-}
-
-.catalog-item-info-price h3 {
-    margin: 0;
-    margin-top: 32px;
-    padding: 0;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.catalog-item-info-price p {
-    line-height: 18px;
-    padding: 0;
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 239px;
-}
-
-.catalog-item-info-price .button {
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 25px;
 }
 
 /* Пагинация */
