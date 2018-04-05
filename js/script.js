@@ -85,29 +85,31 @@
         message.classList.remove("invalid");
       })
 
-      button1.addEventListener("click", function (evt) {
+      if (button1 && button2 && button3 && slide1 && slide2 && slide3) {
+        button1.addEventListener("click", function (evt) {
           clearSliderState();
           slide1.classList.add("slide-current");
           button1.classList.add("active");
-      });
+        });
 
-      button2.addEventListener("click", function (evt) {
-          clearSliderState();
-          slide2.classList.add("slide-current");
-          button2.classList.add("active");
-      });
+        button2.addEventListener("click", function (evt) {
+            clearSliderState();
+            slide2.classList.add("slide-current");
+            button2.classList.add("active");
+        });
 
-      button3.addEventListener("click", function (evt) {
-          clearSliderState();
-          slide3.classList.add("slide-current");
-          button3.classList.add("active");
-      });
+        button3.addEventListener("click", function (evt) {
+            clearSliderState();
+            slide3.classList.add("slide-current");
+            button3.classList.add("active");
+        });
 
-      function clearSliderState() {
-          slide1.classList.remove("slide-current");
-          slide2.classList.remove("slide-current");
-          slide3.classList.remove("slide-current");
-          button1.classList.remove("active");
-          button2.classList.remove("active");
-          button3.classList.remove("active");
+        function clearSliderState() {
+            slide1.classList.remove("slide-current");
+            slide2.classList.remove("slide-current");
+            slide3.classList.remove("slide-current");
+            button1.classList.remove("active");
+            button2.classList.remove("active");
+            button3.classList.remove("active");
+        }
       }
